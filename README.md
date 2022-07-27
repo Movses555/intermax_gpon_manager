@@ -1,6 +1,6 @@
-# intermax_gpon_manager
+# Intermax GPON Manager
 
-Intermax GPON Manager
+GPON Manager app for Intermax
 
 ## Getting Started
 
