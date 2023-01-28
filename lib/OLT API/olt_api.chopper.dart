@@ -20,7 +20,7 @@ class _$OltApi extends OltApi {
   Future<Response<dynamic>> loginOlt(String credentials) {
     final $url = '/';
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $request = Request('GET', $url, client.baseUrl, headers: $headers);
@@ -31,7 +31,7 @@ class _$OltApi extends OltApi {
   Future<Response<dynamic>> saveAll(String credentials, Map<String, int> data) {
     final $url = '/goform/saveall';
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $body = data;
@@ -45,7 +45,7 @@ class _$OltApi extends OltApi {
       String credentials, Map<String, String> data) {
     final $url = '/goform/GponOnuIntfBindDelete';
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $body = data;
@@ -59,7 +59,7 @@ class _$OltApi extends OltApi {
       String credentials, Map<String, String> data) {
     final $url = '/goform/Onuintfconfig';
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $body = data;
@@ -73,7 +73,7 @@ class _$OltApi extends OltApi {
     final $url = '/ontinterfacelist.asp';
     final $params = <String, dynamic>{'selectedponname': ponName};
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $request = Request('GET', $url, client.baseUrl,
@@ -87,7 +87,7 @@ class _$OltApi extends OltApi {
     final $url = '/onusfpinfo.asp';
     final $params = <String, dynamic>{'selectedponname': ponName};
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $request = Request('GET', $url, client.baseUrl,
@@ -104,7 +104,7 @@ class _$OltApi extends OltApi {
       'selectedonuname': onuName
     };
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $request = Request('GET', $url, client.baseUrl,
@@ -122,7 +122,7 @@ class _$OltApi extends OltApi {
       'catvstatus': catvStatus
     };
     final $headers = {
-      'Authorization': credentials,
+      'Cookie': credentials,
     };
 
     final $request = Request('POST', $url, client.baseUrl,

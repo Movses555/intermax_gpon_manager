@@ -1834,8 +1834,10 @@ class _OltListPageState extends State<OltListPage>{
         String username = initialOltDevice.username;
         String password = initialOltDevice.password;
 
-        String credentials = '$username:$password';
-        String encodedCredentials = 'Basic ${base64Encode(utf8.encode(credentials))}';
+        String encodedUsername = 'username=${base64Encode(utf8.encode(username))};';
+        String encodedPassword = 'password=${base64Encode(utf8.encode(password))}';
+
+        String encodedCredentials = '$encodedUsername $encodedPassword';
 
         for(int i = 1; i <= 16; i++) {
 
